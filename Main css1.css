@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.grid-container {
+    width: 90vw;
+    height: 100vh;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 40px;
+    font-family: sans-serif;
+    & > * {
+      padding: 10px;
+    }
+  }
+.header {
+    display: grid;
+    background-image: url(https://menwoodcoatings.com/wp-content/uploads/2017/09/Color-Grid-2.jpg);
+    grid-template-rows: 1fr 2fr;
+  }
+  #header_text {
+      font-size: 2em;
+      font-style: normal;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .menu {
+    display: grid;
+    background-image: url(https://menwoodcoatings.com/wp-content/uploads/2017/09/Color-Grid-2.jpg);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+  }
+  .aside {
+    display: grid;
+    border-color: grey;
+  }
+  article {
+    background-color: #e9f3f3;
+    text-align: center;
+    justify-content: center;
+  }
+  .Container_examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    justify-items: center;
+    align-items: center;
+  }
+  body {
+    background-color: #dedede;
+    color: #dedede;
+    padding: 2em;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .card img {
+    max-width: 50%;
+    width: 70%;
+    padding: 0.5em;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .card {
+    margin-top: 30px;
+  }
+  
+  .card-body {
+    background-color: rgba(169, 95, 11, 0.7);
+    padding: 0.5em;
+  }
+  
+  .btn {
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: rgba(169, 82, 11, 0.9);
+  }
+
+ footer {
+    background-color: #f1ebee;
+  }
+ .button {
+      display: grid;
+      padding: 10px 10px;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background: #deefff;
+      background: -moz-linear-gradient(top, #deefff 0%, hsl(313, 51%, 73%) 100%);
+      background: -webkit-linear-gradient(top, #deefff 0%,hsl(313, 51%, 73%) 100%);
+      background: -o-linear-gradient(top, #deefff 0%,hsl(313, 51%, 73%) 100%);
+      background: -ms-linear-gradient(top, #deefff 0%,hsl(313, 51%, 73%) 100%);
+      background: linear-gradient(top, #deefff 0%,hsl(313, 51%, 73%) 100%);
+      border-radius: 10px;
+      border: 1px solid #008;
+      font: 1em Arial, sans-serif;
+      color: #101113;
+      min-height: 30px;
+      max-width: 50%;
+      min-width: 200px;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+ div.social-wrap button {
+    padding-right: 45px;
+    height: 35px;
+    background: none;
+    border: none;
+    background-size: 35px 35px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    color: white;
+    font-family:"Merriweather Sans", sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+    width: 205px;
+    border-bottom: 2px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    box-shadow: 0 4px 2px -2px gray;
+    text-shadow: rgba(0, 0, 0, .5) -1px -1px 0;
+    display: grid;
+}
+.social-wrap a{
+    display: grid;
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px; 
+}
+#facebook {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-color: #2d5073;
+    background-color: #3b5998;
+    background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
+}
+#twitter {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-color: #007aa6;
+    background-color: #008cbf;
+    background-image: url(https://www.vectorico.com/download/social_media/Twitter-Logo-Blue.jpg);
+}
+#googleplus {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-color: #111;
+    background-color: #222;
+    text-shadow: #333 -1px -1px 0;
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOYAAADbCAMAAABOUB36AAAAflBMVEUAAAD//////Pz8/PzLy8u1tbXW1tZsbGwjIyM6OjrIyMjCwsIJCQmxsbGWlpbQ0NCioqKPj49YWFgsLCx9fX1MTEzt7e2Dg4Pl5eWoqKgXFxff399ra2t0dHRFRUUgICBgYGA1NTVAQECLiYnt6upRUFCcm5sQEBCCgIAiISF1TGOcAAAM3UlEQVR4nNWdaYOiPAzHqQoqeB94K7O6Os/3/4IPeB9JmrYpuP+XuzPAbyhtmqRJoEpQumqEg+FkPdq2x8tTEJyW4/Z2tJ4MB2FjlZbxBIHXq9ejcJiNA43G2TCM6l4fxBtmvT9oLnWAz1o2B31vrF4w68m+bUL4UHufeEGVx4x6loh31F4k/lDCmMnGDfGmTSL7XJKYSVOG8aKmJKkYZjSRZLxoIjZ6ZTDrg5Y8ZKHWQGZGksBcCX2QsDYrgUd0x4y3PiELbePKMcOdb8hCu7BSzG6nDMhCnW5lmGFpkGdQlzdqjxl7mlxxtey/UVvM+bRsyELTebmYHmwBniYlYoZVQRay+kQtMFPvCyWtrYW/wRxzUC1koYF3zNRxMymjtukLNcTsVg14k6G1YIaZVU33UOYNM6oa7VUmm1EDzEXVXO9a+MBcV031qbU4Zqp1KlehMXfGZWKuqgbCxHQt8DCTqmlw8fx/LMwvMHxwsUwiDubM9M6t0aS3CON+FK2iqB+Hi95k5G93OpPBNPHbndbHGNsTzuPj2ou/YSOBmXHv1poll4mvBuv8f2kyk3+veotIizni3WnUPRCEr6yHBfOibI1cMVkP9DescRCfUGvh31I5NZgZ4xbH1ADxgXo4SnJqxi2NqTfwponJe3x7p4mgH4I2/EhMrWMrW1ky3khXmRgn6QyjMHs6yLkT5AV0Lgbas8PU+O+mbm/y6Y1KDV3C54dj0pvoUyICeQFNTjKc+EYbxUzJC/bEIC+gQxlOdF+GYlI5Pe25JOQZdC7iMVyaYlJmwVH0VV45lcgyipkJCCYxye5W8pBn0JVRUhgiZLqFMfv4dZoeXuWVU8Td1Odj1vGrLHxBnkElnIdg6gmIiccuI5+UOaeAK3jKxUR9IrvUL2XOmbqnbEBeEwBzjv3+n5pvypyz9seZE3BfAJiYR3bkbfJ54eRu5HGNOZjYWpKVAXkGzVw5P1eVD0xsyJZGmXM6exY+hu0HJmJ0jUqjVGrvShm0dZhInHZqSvl2WYNfPPw4U35Ged8wEcNgbEJ5vtAhShbH4X62Hx4XSXRgs0plqdRJTMQtwl9Jiq87/P1cFP78hnM9qaplMpTvLpNXTGT+4RrrOQaZ7L7R+Mck4+FzAhO28hIepVKxPtm9GRNeeZ3zyURTHLMB/sKM91HVjrwASecIfwIqdbd/ntVAMUH7p82hVHWTVWAPgIpnyI0xTDhYyzDXVc3UlzN8A1VK9HDHWQmCCYaqQi2lXapi+PyNqpWBb689OetX94dpwZjgy9RbP+pg52fdHm6XNvQD3dYKdCd1UwJigl+mdsV02PFfPRGqbpaCfIvaatM+xhAmOM12NZRu63lWDFzj/A025tNk+8CE/qS6WVYd3Pzly4NFovUNUzton9bOOyb4t9GYP5QHkKnQPK2Kj/nIGrpjQkZaU0NZTTJ4k4+5eccEtyb0kllVrqIB5n2jcsOEHpm28irLyFwbYC7eMCHT4BtHbPBIM+Bgtl4xoR0Q+TIFZh9D/R5z9XLdorXpsHcVYZ9EL5hQvhr1ZaqDNxxMRK4lsSbNXjCBHyCnWVXKecYXETnf1Fb+GTMGL0tQVpAqbYkZP2ECP/dDUVYx/Vhibp4wgf8mrFlNXoInEZjkluyBCVnt1IcpnVnIki1m444JzLPEBAR+yf5FzLQk5uyOCWwzCG8emWTiT4v4qlvYvR43LuqTo+t0w4TMCYKy6mM32ysmd4aYXzGB56bGrOgzW+i2iyQyJF60uGJmn/+FO7oqf5nGmNkVE/ivFH+ZpVYBgLQ1xAwumIDfALcNvuDkjTHm6owJhDT3OGYla+aLjDG7Z0zAVEKXk2oMoFcZY27OmIDTCd2DfcM5qj83q4D7C+MCE/qj4GNWNmplpZ95dBH7N+o5JvDTeNbIF4xZC0U5JjAD9dAxW2n9Cmt1c0zAbkeNg+pqkThplmMCKwTqOIBjg1+vUY4JWDW4DVT+I0qok2MC/4y+zNK9lkJSAeCJbKGYxrU6uqouJJU5YB4C4AWhmWvmx0VcK6o9yQWzHwCm+BrFNM6D+BLMJAC2jxMU07iAlyCmi2t4EQDjEN2foInTZWC6pJ8OA2DBH6KYxtcXLL7qcoxsEgCfG27rVYnpktDXDAAj6PiVmC5nyEYBEBsUxJT6NvN7u7zNbQCkXAsOWkFMl2/zJwCMcXym/a9CTJeZthUAkYJfFNPYdyCI6bIHXAbABgV1uausQkyXTFTQt4xmXZqX1BHEdPOcAqCoM9rcryeI6XI8pQN9m/h+0ziyKYjpQJlDmuQ9mafJyGE6OS5a0LqJJ14a/0nFMN1qw/1AVhARW8gqw3QKUW0hmzYYoJimwU0pm9YxqjGCdijBBsU0HTpymE4ND5rQfpM44GcaxJXDdCpOOYG8B0RSkKllKbYRc/MQDyFfUFEKAsM0PJMnhunmIV5Anj1ix2maetlrxE9qfKj/IiKRy60wSwL5aamzRF7juMRf182i7UNe94DKfvIZRsFv6piMdABjKMTHWVO/bnckhO5za8jJUrbgiBiZSuIv/fuA39StRkAHjm8W1aLw8eMrlIs6+/N7up3RGsHR6oA6NuUtZwY/QuBa03kG5x4EhOfd0ZWIC/UnOnr1gkvuAbLgU6nuQmXxXnSibuh47QjJCwqK3Gn8rj6C1vjc7jzPnvOCEKMYDXIW95Xvj0bMP87HQcZYzl6hOn5f+TzwHUXpOudtsAzMQrjlVRQ5dLzzu6gyjM5TXhfLpz2LPDwlm+5FVh1wzjpfodnRhcjj4wK1ix4iVi+b9JV3KTTXvRA1xYseE6NmO4Hl65brjvmx6GoAYnnSdAUJ95d5O7mAzScdzQlymZrlfzV3cb7B7RwKOixQR+b1CTLnR9BWfHPfxt9PFeGBLvIJRMwEyiw4y/kOjzNiqDGlewjnv7VmvEjs+h4n/vDxr6vi5WjeEobs5fICXXXUAxMdfNSZ3MuDGJaHeda0rr26e4ek59O4eNySMvkuT2I9cBf6enQC9aSfz1YTs7a+6Lc62KwsI9zzc7+whOWsnjHxpAJGwcR8NJjWB9jhdeierivQ1Ou17gERM+DUnzPseVy0LWZc1DihA9BrFQvqSELMqkCn2JV/fkJWOUyRs4VvNUnI+Kz+K7qARhxrYRMxa36K+IPfK8xQx+fQFP8PUJXQ+5Ymv0mMzJGX93pBpN3Gr8FbhOiO8NZldOyzGaX2Px/Vn2h7A49ugKTqEC/26+m42BKcxtP1fhHz+lI9LiITqfms5UWn62uthE/UN5n9vky7JqAym8YZqiu4JyqpFrxQnT3NYqyvhSlHKeRPA6sm6tap0jjFvIZwDUzdFF7SuBVrGo1UNNWaHYbzkCWlWLM4rD6t1lQ2WVdsKcVi/mi1YX3kyXd3CYG+EnfhtaP1R91aXjuiqIPcoWaiEjhnH8var1hSSpaVouq6cxxpe08D16IHLyGySj+rzscPb2NmSnkQbQBO91zgLVoD8Rcq3TRa00ED7Yfyqh/hlmlqJdEd5CFtPxSuN20m2J5J1aQT5PTdbdghcJbbigMpXx2M0atIbwvdtJNowZmbmOLFUVmdpwycwGNX0BxSdH69iNdHzGTSWxauM2tGtfBRgJHZFY5h8z1rb9cIOB81klkaD7F7/PGLgV207dZMfT2q1hXsWf0ifsdG86hlFqbc0Zv/XBpmHvguMui/aVVk4E/vcgeaMP8T9nyWPTPqpmq775sOk/s0946Xa54M7YO+LBn2xqU7HdNqb3phY5U+nLW1dNUIexuRXsa0jDsdi6R6d3b/7UqtDGret1qydVlZsuhCbtdoqVJZ9ZSXbdJWgpBJVov5bxUPnFAkJGYVPQdstSZBaEyVVf30XGU0hwbzC4oLs4SZBVzMf4NTR6nHVFnVDHppRiwL08PZGmFt9AwMTFFvuAfNGAgczG+oi40L8onYYX5BzXpUvJIDPEyJLGU/IrqkWGCq1IOj0V1jdOdlifmVhh9t4NlhVt8h5F0L/TNbYH7bRpso7eGE+VUWkd7ysccUS01y1nucVhZTpSX45/Rqc2dYW8yvMIlYho8jpkp9RT+Y2pq+SjvMin1+VjXtrDArdIaRji1xTDX3HAyBNQUC0V4xlYpLbxrSiq0f1h4z/0RLjY90XApNumAangxzgzS0B0Qx8zdaSi/gnWvJUFfM/Bv1voxu7b9JOUylVl59fxumg4CUBKZS9YGnabc1ABNDjCWDmSvyYDFMTLaUpMQwcyUupdc/1BRsSyGKmSsR+kw3koxKHDNX1HPckrZ7YmP1LnnMXPVkb4na3icyc86bvGAWqvcHTaPcomVz0PeCWMgb5ln1KBxmWkf2OBuGkTfCs/xiXlVkeQ2Gk/Vo2x4vT0FwWo7b29F6MhwU6WBlPMH/DxPM0ypWCxwAAAAASUVORK5CYII=);
+}
+#text_aside {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  font-size: 3em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#Content_text {
+color: rgb(7, 7, 7);
+text-align: center;
+justify-content: center;
+}
+#Container_images {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #c7670e;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #73bd42;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  
+  #header_text {
+    font-size: 1em;
+  }
+  #Content_text {
+    width: 400px;
+  }
+  .button {
+    font-size: small;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    grid-template-columns: 1fr;
+  }
+}
