@@ -22,8 +22,9 @@
   }
   #header_text {
       font-size: 2em;
-      font-style: normal;
+      font-style: italic;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgb(241, 233, 233);
   }
   .menu {
     display: grid;
@@ -37,7 +38,7 @@
   }
   .aside {
     display: grid;
-    border-color: grey;
+    border-color:rgb(7, 7, 7);
   }
   article {
     background-color: #e9f3f3;
@@ -47,8 +48,8 @@
   .Container_examples {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
     justify-items: center;
     align-items: center;
   }
@@ -61,15 +62,15 @@
     text-align: center;
   }
   .card img {
-    max-width: 50%;
-    width: 70%;
+    min-width: 100px;
+    min-height: 200px;
     padding: 0.5em;
     display: block;
     margin: 0 auto;
   }
-  
   .card {
     margin-top: 30px;
+    display: grid;
   }
   
   .card-body {
@@ -167,6 +168,7 @@
   justify-content: center;
   font-size: 3em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111;
 }
 #Content_text {
 color: rgb(7, 7, 7);
@@ -320,10 +322,13 @@ fieldset {
   }
   .grid-container {
     display: grid;
-    grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr  1fr 1fr;
     grid-template-columns: 1fr;
   }
   .menu {
+    grid-template-columns: 1fr;
+  }
+  .Container_examples {
     grid-template-columns: 1fr;
   }
 }
